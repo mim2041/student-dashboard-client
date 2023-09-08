@@ -3,7 +3,7 @@
 const Features = () => {
     return (
         <div className=" px-12 lg:px-24 py-12 text-center mt-12">
-            <h1 className="title text-5xl mb-3 text-blue-800 text-center">Our Features</h1>
+            <h1 className="title text-4xl mb-3 text-blue-800 text-center">Our Features</h1>
             <hr className="w-full lg:w-1/4 mx-auto border-b-4 border-blue-800 mb-6 rounded" />
             <p className="lg:w-3/4 mx-auto">The features of a student portal website for our University can be diverse and comprehensive, aiming to provide students with a robust and user-friendly platform for our academic needs. We are providing a new system with integration of our exam form fill up, view result, show student information, and apply for Testimony. We (the students) have to face many ironies to collect these.</p>
             
@@ -72,9 +72,6 @@ const Features = () => {
                     </div>
                 </div>
                 
-                
-                
-
             </div>
         </div>
     );

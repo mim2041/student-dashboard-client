@@ -3,8 +3,8 @@ import img from '../../../assets/images/home/banner3.jpg'
 const About = () => {
     return (
         <div className='mx-8 lg:mx-24 my-12 '>
-            <h1 className="title text-5xl mb-3 text-blue-800 text-center">About US</h1>
-            <hr className="w-full lg:w-1/4 mx-auto border-b-4 border-blue-800 mb-8 lg:mb-12 rounded" />
+            <h1 className="title text-4xl mb-3 text-blue-800 text-center">About US</h1>
+            <hr className="w-full lg:w-1/5 mx-auto border-b-4 border-blue-800 mb-8 lg:mb-12 rounded" />
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-16'>
             <div className='w-full lg:w-1/3 rounded-xl'>
                 <img className='rounded-xl' src={img} alt="" />
