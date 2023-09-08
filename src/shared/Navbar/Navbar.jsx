@@ -9,7 +9,7 @@ const Navbar = () => {
         <li><Link>Testimony</Link></li>
     </>
     return (
-        <div className="navbar px-4 lg:px-8 fixed z-10 bg-opacity-30 bg-black">
+        <div className="navbar px-4 lg:px-8 fixed z-10 bg-opacity-30 bg-black text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,10 +19,10 @@ const Navbar = () => {
                     {navItems}
                 </ul>
                 </div>
-            </div>
-            <div className="lg:navbar-start flex justify-center items-center ">
-                <img className="w-12" src={logo} alt="" />
-                <a className="normal-case text-xl font-bold">Student Portal</a>
+                <div className="lg:navbar-start flex justify-center items-center ">
+                    <img className="w-12" src={logo} alt="" />
+                    <a className="normal-case text-xl font-bold">Student Portal</a>
+                </div>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
