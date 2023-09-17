@@ -3,10 +3,12 @@ import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
     const navItems = <>
+        <li><Link to='/'>Home</Link></li>
         <li><Link to="/exam_form">Exam Form</Link></li>
         <li><Link>View Result</Link></li>
         <li><Link>Testimony</Link></li>
         <li><Link>Testimony</Link></li>
+        <li><Link to="/login">Login</Link></li>
     </>
     return (
         <div className="navbar px-4 lg:px-8 fixed z-10 bg-opacity-30 bg-black text-white">

@@ -20,7 +20,6 @@ const Banner = () => {
                 <button className="btn btn-outline btn-secondary">Latest Updates</button>
             </div>
         </div>
-
     </div>
 
     return (
