@@ -25,7 +25,8 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
+        navigate("/")
       })
       .catch((error) => {
         console.log(error.message);
@@ -57,11 +58,12 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 className="input input-bordered"
                 {...register("password", { required: true })}
               />
+              {errors.password && <span className="text-red-600">Password did not match</span>}
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
                   Forgot password?

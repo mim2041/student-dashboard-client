@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import PrimaryButton from "../../components/PrimaryButton";
 
 const Registration = () => {
 
@@ -22,7 +23,7 @@ const Registration = () => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                
-                navigate('/')
+                navigate('/login')
             })
       }
 
@@ -44,6 +45,20 @@ const Registration = () => {
                         </div>
                         <div className="form-control">
                             <label className="label">
+                                <span className="label-text">Father's Name</span>
+                            </label>
+                            <input type="text" {...register("fname", { required: true })}  placeholder="Your Name" className="input input-bordered" />
+                            {errors.fname && <span className="text-red-600">Father's Name is required</span>}
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Mother's Name</span>
+                            </label>
+                            <input type="text" {...register("mname", { required: true })}  placeholder="Your Name" className="input input-bordered" />
+                            {errors.mname && <span className="text-red-600">Name is required</span>}
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
                                 <span className="label-text">Class Roll</span>
                             </label>
                             <input type="number" {...register("roll", { required: true })} placeholder="Class Roll" className="input input-bordered" />
@@ -52,9 +67,34 @@ const Registration = () => {
                         </div>
                         <div className="form-control">
                             <label className="label">
+                                <span className="label-text">Exam Roll</span>
+                            </label>
+                            <input type="number" {...register("eroll", { required: true })} placeholder="Class Roll" className="input input-bordered" />
+                            {errors.eroll && <span className="text-red-600">Roll No is required</span>}
+
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
                                 <span className="label-text">Registration No</span>
                             </label>
                             <input type="number" {...register("registration", { required: true })} placeholder="Registration No" className="input input-bordered" />
+                        </div>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Session</span>
+                            </label>
+                            <select className="select select-bordered">
+                                <option disabled selected>Select your Session</option>
+                                <option>2021-2022</option>
+                                <option>2020-2021</option>
+                                <option>2019-2020</option>
+                                <option>2018-2019</option>
+                                <option>2017-2018</option>
+                                <option>2016-2017</option>
+                                <option>2015-2016</option>
+                                <option>2014-2015</option>
+                                <option>2013-2014</option>
+                            </select>
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -82,7 +122,7 @@ const Registration = () => {
                         </label>
                         </div>
                         <div className="form-control mt-6">
-                        <button className='py-2 px-4 bg-gradient-to-r from-blue-800 to-blue-500 text-white rounded-lg  btn-wide mx-auto'>Sign Up</button>
+                        <PrimaryButton></PrimaryButton>
 
                         </div>
                     </form>

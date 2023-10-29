@@ -49,7 +49,7 @@ const Form = () => {
                 </div>
                 <div>
                     <label className="label">
-                        <span className="label-text mt-4">Alloted Hall</span>
+                        <span className="label-text mt-4">Enrolled Courses</span>
                     </label>
                     <table className="text-center w-full max-w-xl lg:max-w-2xl">
                         <thead className="max-w-xl lg:max-w-2xl">
